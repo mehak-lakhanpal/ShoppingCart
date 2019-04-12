@@ -13,6 +13,6 @@ $(function(){
             })
     })
     $('#viewProduct').click(function(){
-    window.location=`http://localhost:5878/add_products.html`
+    window.location=`./add_products.html`
     })
 })
