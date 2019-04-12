@@ -19,6 +19,6 @@ $(function () {
         }
         console.log(totalP + " " + totalQ)
         totalqty.text(`Total Quantity : ${totalQ}`)
-        totalprice.text(`Total Price : ${totalP}`)
+        totalprice.text(`Total Price : Rs. ${totalP}`)
     }
 })
