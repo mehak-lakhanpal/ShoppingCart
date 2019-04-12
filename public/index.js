@@ -29,7 +29,7 @@ $(function() {
             localStorage.setItem('itemsList',JSON.stringify(items))
             console.log(JSON.parse(localStorage.getItem('itemsList')));
         })
-        window.location=`http://localhost:5878/display_cart.html`
+        window.location=`./display_cart.html`
     })
 })
 
