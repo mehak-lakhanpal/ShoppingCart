@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="shop.js"></script>
+    <script src="display_cart.js"></script>
+</head>
+<body>
+        <section id="cartItemsSec" style="display: none">
+                <div class="container">
+                    <h2 class="text-center m-3">Cart</h2>
+                    <table class="table table-bordered m-3">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Vendor Name</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartList">
+                        </tbody>
+                    </table>
+                    <b>
+                    <label id="totalqty" class="ml-3"></label>
+                    </b>
+                    <br>
+                    <b>
+                    <label id="totalprice" class="ml-3"></label>
+                    </b>
+                </div>
+                </section>
+                <section id="emptyList" style="display: none">
+                    <h2 class="text-center m-3">Your Cart List is empty</h2>
+                </section>
+</body>
+</html>
