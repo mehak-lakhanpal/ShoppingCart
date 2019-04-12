@@ -1,18 +1,6 @@
 const User = require('../../db').User
 const route = require('express').Router();
 
-route.get('/',(req,res)=>{
-    User.findAll()
-        .then((users)=>{
-            res.status(200).send(users)
-        })
-        .catch((err)=>{
-            res.status(500).send({
-                error:"Could not retrieve users"
-            })
-        })
-})
-
 route.post('/',(req,res)=>{
     User.create({
         name : req.body.name
@@ -37,13 +25,6 @@ route.get('/:name',async (req,res)=>{
       //  res.status(201).send(userRes)
       console.log("user onj:"+userRes)
       res.send(userRes)
-      
-       // res.status(200).send(vendors)
-  /*  }).catch((err)=>{
-        res.status(501).send({
-            error:"Not a valid user"
-        })
-    })  */ 
  })
 
 exports = module.exports = route 

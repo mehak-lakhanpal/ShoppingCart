@@ -8,5 +8,7 @@ app.use(express.urlencoded({extended:true}))
 
 app.use('/', express.static(path.join(__dirname,'public')))
 app.use('/api',require('./routes/api').route)
-app.listen(5878)
+
+const PORT = process.env.PORT || 5878
+app.listen(PORT)
 //app.listen(3456,()=>console.log(`Server started at http://localhost:3567`))

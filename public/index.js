@@ -5,7 +5,8 @@ $(function() {
 
     $('#btnLogin').click(function () {
     var userobj =validateUser(userName.val())
-        if(jQuery.isEmptyObject(userobj) ){
+    console.log(userobj)
+        if(jQuery.isEmptyObject(userobj)||userobj==null ){
            
             alert("Invalid")
         }else{
@@ -30,6 +31,5 @@ $(function() {
         })
         window.location=`http://localhost:5878/display_cart.html`
     })
-       
 })
 

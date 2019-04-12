@@ -12,4 +12,7 @@ $(function(){
                 vendorName.val("")
             })
     })
+    $('#viewProduct').click(function(){
+    window.location=`http://localhost:5878/add_products.html`
+    })
 })
