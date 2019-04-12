@@ -14,7 +14,7 @@ $(function () {
         var totalP = 0;
         for (i of itemsList) {
             totalQ += i.quantity;
-            totalP += i.product.price
+            totalP += (i.product.price*i.quantity)
             cartList.append(createCartList(i))
         }
         console.log(totalP + " " + totalQ)
